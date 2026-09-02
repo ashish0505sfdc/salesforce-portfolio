@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #F6F4EE;
+    --surface: #EFECE4;
+    --surface-light: #FAF8F5;
+    --text-primary: #1E261F;
+    --text-secondary: #4A554A;
+    --text-muted: #768375;
+    --accent-olive: #4E614B;
+    --accent-olive-light: #627A5E;
+    --accent-mauve: #9A788E;
+    --accent-mauve-light: #B492A8;
+    --border-color: #E5E0D5;
+    --border-subtle: #ECE8DE;
+    --gold: #C5A059;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-primary);
+  }
+
+  .font-serif-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(229, 224, 213, 0.85);
+}
+
+.glass-panel-warm {
+  background: rgba(250, 248, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 224, 213, 0.9);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 224, 213, 0.8);
+  box-shadow: 0 4px 20px -2px rgba(30, 38, 31, 0.05);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(78, 97, 75, 0.35);
+  box-shadow: 0 16px 36px -4px rgba(30, 38, 31, 0.1);
+  transform: translateY(-3px);
+}
+
+/* 3D Perspective Card Container */
+.perspective-container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F4EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C2B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4E614B;
+}
+
+/* Dot Background Pattern */
+.bg-grid-dots {
+  background-image: radial-gradient(rgba(78, 97, 75, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
