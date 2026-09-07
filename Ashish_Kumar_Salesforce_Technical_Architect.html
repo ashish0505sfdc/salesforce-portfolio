@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Kumar — Salesforce Technical Architect Resume</title>
+<meta name="description" content="Resume of Ashish Kumar, 13x Certified Salesforce Technical Architect with 13+ years experience.">
+<style>
+  :root {
+    color-scheme: light;
+    --navy: #12324F;
+    --steel: #1F5F8B;
+    --amber: #B0741A;
+    --olive: #4E614B;
+    --ink: #26313A;
+    --muted: #4A5A66;
+    --band: #F1F6FA;
+    --line: #D6E3EE;
+    --bg: #EEF2F6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Calibri, Carlito, "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 24px 14px 60px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .toolbar {
+    max-width: 8.5in;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(18,50,79,.08);
+  }
+  .toolbar-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .btn {
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: .3px;
+    transition: background 0.2s;
+  }
+  .btn:hover { background: #0A1C2C; }
+  .btn.alt { background: var(--amber); }
+  .btn.alt:hover { background: #8E5C12; }
+  .btn.olive { background: var(--olive); }
+  .btn.olive:hover { background: #3B4B39; }
+  .hint { font-size: 11px; color: #556673; }
+
+  .page {
+    max-width: 8.5in;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0.5in 0.55in 0.45in;
+    box-shadow: 0 8px 30px rgba(18,50,79,.14);
+    border-top: 7px solid var(--navy);
+  }
+
+  /* ---------- HEADER ---------- */
+  .name {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin: 0 0 5px;
+    line-height: 1.05;
+  }
+  .headline {
+    font-size: 14.5px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin: 0 0 7px;
+  }
+  .headline .yrs { color: var(--amber); }
+  .keyline {
+    font-size: 11.3px;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: .2px;
+    margin: 0 0 11px;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid var(--amber);
+  }
+  .contact {
+    font-size: 11.4px;
+    color: var(--ink);
+    line-height: 1.75;
+    margin: 0;
+  }
+  .contact a { color: var(--steel); text-decoration: none; font-weight: 600; }
+  .sep { color: var(--amber); font-weight: 700; padding: 0 6px; }
+
+  /* ---------- IMPACT BAND ---------- */
+  .impact {
+    display: flex;
+    background: var(--band);
+    border-left: 4px solid var(--amber);
+    margin: 14px 0 4px;
+    padding: 9px 4px;
+  }
+  .stat { flex: 1; text-align: center; padding: 0 6px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: none; }
+  .stat b {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--amber);
+    line-height: 1.15;
+  }
+  .stat span {
+    display: block;
+    font-size: 9.3px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--navy);
+    font-weight: 700;
+    margin-top: 2px;
+    line-height: 1.3;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin: 19px 0 9px;
+    padding: 0 0 4px 10px;
+    border-bottom: 1.5px solid var(--line);
+    border-left: 4px solid var(--amber);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  p, li { font-size: 11.4px; line-height: 1.5; }
+  .summary { margin: 0; color: var(--ink); }
+
+  /* ---------- SKILLS ---------- */
+  .skill {
+    margin: 0 0 5px;
+    padding-left: 0;
+    font-size: 11.2px;
+    line-height: 1.48;
+    color: var(--ink);
+  }
+  .skill b { color: var(--navy); font-weight: 700; }
+
+  /* ---------- EXPERIENCE ---------- */
+  .exp {
+    margin-bottom: 13px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .role {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .title {
+    font-size: 12.6px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: .2px;
+  }
+  .dates {
+    font-size: 10.8px;
+    font-weight: 700;
+    color: var(--amber);
+    white-space: nowrap;
+  }
+  .company {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--steel);
+    margin: 1px 0 5px;
+  }
+  .company em { font-style: normal; font-weight: 600; color: var(--muted); }
+  ul { margin: 0; padding-left: 15px; }
+  li { margin-bottom: 3.5px; color: var(--ink); }
+  li::marker { color: var(--amber); }
+  strong.m { color: var(--amber); font-weight: 700; }
+  strong.k { color: var(--navy); font-weight: 700; }
+
+  /* ---------- CERTS / EDU ---------- */
+  .certs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 26px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .certs li {
+    font-size: 11.1px;
+    padding-left: 13px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .certs li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 6px;
+    width: 6px; height: 6px;
+    background: var(--amber);
+    border-radius: 1px;
+  }
+  .edu { font-size: 11.4px; margin: 0; line-height: 1.5; }
+  .edu b { color: var(--navy); }
+
+  @page { size: Letter; margin: 0.45in 0.5in; }
+  @media print {
+    body { background: #fff; padding: 0; margin: 0; }
+    .page { box-shadow: none; max-width: none; padding: 0; border-top: 6px solid var(--navy); padding-top: 12px; }
+    .toolbar { display: none !important; }
+    a { color: var(--steel) !important; }
+    .impact { background: var(--band) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body, .page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="toolbar-left">
+    <button class="btn" onclick="window.print()">🖨️ Save as PDF / Print</button>
+    <a class="btn olive" href="Ashish_Kumar_Salesforce_Technical_Architect.md" download="Ashish_Kumar_Salesforce_Technical_Architect.md">📄 Download Markdown (.md)</a>
+    <a class="btn alt" href="https://ashish0505sfdc.github.io/salesforce-portfolio/" target="_blank">🌐 Live Portfolio</a>
+  </div>
+  <span class="hint">Claude Sonnet & LLM Optimized • Human Readable</span>
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="name">Ashish Kumar</div>
+  <div class="headline">Salesforce Technical Architect <span class="yrs">| 13+ Years Experience</span></div>
+  <div class="keyline">Solution &amp; Integration Architecture &nbsp;•&nbsp; Revenue Cloud (CPQ) &nbsp;•&nbsp; Financial Services Cloud &nbsp;•&nbsp; OmniStudio &nbsp;•&nbsp; Agentforce &amp; Einstein AI &nbsp;•&nbsp; DevOps / CI-CD Governance</div>
+  <p class="contact">
+    Bengaluru, India<span class="sep">|</span>+91 9500084948 / +91 8074953139<span class="sep">|</span><a href="mailto:ashish0505sfdc@gmail.com">ashish0505sfdc@gmail.com</a><span class="sep">|</span><a href="https://www.linkedin.com/in/ashish0505sfdc/" target="_blank">linkedin.com/in/ashish0505sfdc</a><span class="sep">|</span><a href="https://github.com/ashish0505sfdc" target="_blank">github.com/ashish0505sfdc</a>
+  </p>
+
+  <!-- IMPACT BAND -->
+  <div class="impact">
+    <div class="stat"><b>13x</b><span>Salesforce Certified</span></div>
+    <div class="stat"><b>$15M+</b><span>Portfolio Enabled</span></div>
+    <div class="stat"><b>60K+</b><span>End Users Served</span></div>
+    <div class="stat"><b>45%</b><span>Onboarding Capacity Gain</span></div>
+    <div class="stat"><b>35%</b><span>Faster Release Cycles</span></div>
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Professional Summary</h2>
+  <p class="summary">Salesforce Technical Architect with <strong class="m">13+ years</strong> of IT experience architecting scalable, secure, enterprise-grade Salesforce solutions and leading multi-million-dollar digital transformation programs across Banking, NBFC, Insurance, Retail, Government, and Manufacturing. Serves as <strong class="k">technical design authority</strong> within a Big&nbsp;4 delivery environment (PwC) — owning solution blueprints, data modeling, integration architecture, security and sharing design, DevOps governance, and production hyper-care. Deep specialization in <strong class="k">Revenue Cloud (CPQ), Financial Services Cloud (FSC), Sales, Service and Experience Cloud, OmniStudio</strong>, and <strong class="k">Agentforce / Einstein AI</strong>. <strong class="m">13x Salesforce Certified</strong>, including Certified System Architect and five domain Architect credentials. Proven at converting ambiguous business goals into resilient technical roadmaps, enforcing engineering standards, and mentoring distributed squads of <strong class="m">15+</strong> engineers.</p>
+
+  <!-- SKILLS -->
+  <h2>Technical Skills &amp; Core Competencies</h2>
+  <p class="skill"><b>Salesforce Clouds &amp; Products:</b> Financial Services Cloud (FSC), Revenue Cloud / CPQ, Sales Cloud, Service Cloud, Experience Cloud (Communities), Data Cloud, Commerce Cloud (SFCC), Marketing Cloud, OmniStudio (OmniScript, FlexCards, Integration Procedures, DataRaptor)</p>
+  <p class="skill"><b>Architecture &amp; Design:</b> Enterprise &amp; Solution Architecture, Technical Design Authority, Data Modeling, Large Data Volume (LDV) Strategy, Sharing &amp; Visibility Design, Identity &amp; Access Management, Multi-Org Strategy, Non-Functional Requirements, Governor-Limit Optimization, Performance Tuning, Scalability &amp; Resilience</p>
+  <p class="skill"><b>Development:</b> Apex, Lightning Web Components (LWC), Aura, Visualforce, SOQL / SOSL, Flow &amp; Process Automation, Triggers, Batch / Queueable / Scheduled Apex, Enterprise Apex Design Patterns, JavaScript, HTML5, CSS3, Java</p>
+  <p class="skill"><b>Integration &amp; Middleware:</b> REST / SOAP APIs, Platform Events, MuleSoft, AWS Serverless (Lambda, S3, EC2, API Gateway), OKTA SSO, SAML, OAuth 2.0, Credit Bureau &amp; Payment Gateway Integrations, DocuSign, UAE Pass, HexaBPM</p>
+  <p class="skill"><b>AI &amp; Automation:</b> Agentforce, Einstein AI, Prompt Builder, Autonomous Process Automation, Intelligent Case &amp; Lead Routing, Data Cloud Grounding</p>
+  <p class="skill"><b>DevOps &amp; Tooling:</b> Copado, GitHub, Git Branching Strategy, CI/CD Pipeline Automation, Salesforce DX (SFDX), VS Code, Change Sets, Jira (JQL), ServiceNow, Confluence, Heroku CLI</p>
+  <p class="skill"><b>Delivery &amp; Leadership:</b> Agile / Scrum, Scrum Master, Sprint &amp; Release Planning, Stakeholder Management, Pre-Sales &amp; Solutioning, Technical Roadmapping, Code Review &amp; Governance, Estimation, Mentoring &amp; Team Enablement</p>
+
+  <!-- EXPERIENCE -->
+  <h2>Professional Experience</h2>
+
+  <div class="exp">
+    <div class="role"><span class="title">Salesforce Technical Architect — Financial Services Cloud</span><span class="dates">Mar 2026 – Present</span></div>
+    <div class="company">LTIMindtree <em>— Bengaluru, India</em></div>
+    <ul>
+      <li>Architect omni-channel service workflows on <strong class="k">Financial Services Cloud</strong>, designing automated Telephony and Email Interaction models that reduced average agent handle time by <strong class="m">22%</strong>.</li>
+      <li>Accelerated release velocity by <strong class="m">35%</strong> by standardizing CI/CD across GitHub, Copado, and SFDX/VS Code, automating regression gates and synchronizing external user stories.</li>
+      <li>Engineered reusable <strong class="k">enterprise Apex design patterns</strong> and asynchronous processing (Batch, Queueable), eliminating Apex CPU-time limit failures across high-volume daily transaction loads.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Technical Architect — Salesforce</span><span class="dates">Nov 2023 – Feb 2026</span></div>
+    <div class="company">PricewaterhouseCoopers (PwC) <em>— Bengaluru, India</em></div>
+    <ul>
+      <li>Owned end-to-end <strong class="k">technical design authority</strong> for a cloud-native <strong class="k">Loan Origination System (LOS)</strong> delivered under Big&nbsp;4 governance for Banking and Insurance clients, scaling digital onboarding capacity by <strong class="m">45%</strong>.</li>
+      <li>Architected a <strong class="k">Salesforce Revenue Cloud (CPQ)</strong> model spanning multi-tiered pricing matrices, product bundles, and validation/selection rules — compressing quote-to-cash cycle time by <strong class="m">30%</strong>.</li>
+      <li>Designed secure real-time banking integration architecture on <strong class="k">AWS serverless</strong> (Lambda, S3, API Gateway) with REST APIs and Platform Events, improving cross-platform data synchronization throughput by <strong class="m">40%</strong>.</li>
+      <li>Directed cross-functional squads of <strong class="m">15+</strong> engineers delivering <strong class="k">OmniStudio</strong> (OmniScript, Integration Procedures) and <strong class="k">LWC</strong> journeys, cutting paper-based processing time by <strong class="m">50%</strong>.</li>
+      <li>Instituted DevOps governance, branching strategy, and automated <strong class="k">CI/CD pipelines</strong> (Copado, GitHub, SFDX), reducing configuration conflicts and production defects by <strong class="m">25%</strong>.</li>
+      <li>Drove Agile delivery as <strong class="k">Scrum Master</strong> — Jira velocity, burndown, and quality dashboards — lifting sprint velocity and delivery predictability by <strong class="m">20%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Technical Architect / Senior Salesforce Consultant</span><span class="dates">Jun 2023 – Nov 2023</span></div>
+    <div class="company">Happiest Minds Technologies <em>— India</em></div>
+    <ul>
+      <li>Authored multi-country solution blueprints covering <strong class="m">13</strong> distinct loan journey variants, enabling capture of a <strong class="m">$15M</strong> regional portfolio in full alignment with local financial compliance mandates.</li>
+      <li>Integrated the Loan Origination System with <strong class="m">20+</strong> credit bureau and risk-assessment APIs, reducing credit-decisioning latency by <strong class="m">60%</strong> through optimized middleware routing.</li>
+      <li>Re-engineered Apex data access and SOQL indexing to clear systemic bottlenecks, lowering platform resource consumption by <strong class="m">35%</strong>; standardized Copado pipelines that cut code variance across distributed teams by <strong class="m">40%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Technical Lead — Salesforce</span><span class="dates">Sep 2022 – Feb 2023</span></div>
+    <div class="company">Drops Goods Wholesalers Pvt Ltd <em>— India</em></div>
+    <ul>
+      <li>Automated warehouse sorting and cross-cloud promotion workflows via real-time product-tracking connectors, lifting operational throughput by <strong class="m">28%</strong>.</li>
+      <li>Orchestrated cross-cloud data synchronization between <strong class="k">Salesforce Commerce Cloud (SFCC)</strong>, Sales Cloud, and Marketing Cloud, increasing targeted promotion conversion by <strong class="m">15%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Salesforce Architect / Consultant</span><span class="dates">May 2019 – Aug 2022</span></div>
+    <div class="company">Finesse Softech LLC <em>— Dubai, UAE</em></div>
+    <ul>
+      <li>Architected a government digital experience platform serving <strong class="m">60,000+</strong> citizens and <strong class="m">13,000+</strong> corporate entities, raising digital service access efficiency by <strong class="m">70%</strong>.</li>
+      <li>Designed secure multi-persona <strong class="k">Experience Cloud</strong> portals for Agents, Customers, and Partners, increasing ecosystem user engagement by <strong class="m">55%</strong>.</li>
+      <li>Integrated <strong class="m">8+</strong> government agency systems using <strong class="k">OKTA SSO</strong> and Central Bank payment gateways, reducing authentication drop-offs by <strong class="m">40%</strong>.</li>
+      <li>Implemented digital-signature frameworks (DocuSign, UAE Pass) with localized multi-language Experience Cloud components, elevating customer satisfaction (CSAT) by <strong class="m">18%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Salesforce Consultant</span><span class="dates">Dec 2018 – Apr 2019</span></div>
+    <div class="company">Negocios Consultancies LLC <em>— Dubai, UAE</em></div>
+    <ul>
+      <li>Deployed custom Sales Cloud and Service Cloud automation for commercial sales and client servicing, cutting customer response times by <strong class="m">30%</strong>.</li>
+      <li>Built an Agent Portal integrated with HexaBPM middleware that accelerated automated partner commission payouts by <strong class="m">25%</strong>, plus Excel/CSV bulk-upload utilities that reduced manual data-entry effort by <strong class="m">95%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Salesforce Developer / Consultant</span><span class="dates">Sep 2017 – Oct 2018</span></div>
+    <div class="company">Pearson Education Pvt Ltd <em>— India</em></div>
+    <ul>
+      <li>Built an enterprise product-configuration and quote-generation engine from the ground up, reducing manual quotation effort by <strong class="m">95%</strong>.</li>
+      <li>Migrated legacy Visualforce to responsive <strong class="k">LWC/Aura</strong> and integrated Java operations portals and Google Maps APIs via secure REST callouts — boosting mobile field adoption by <strong class="m">65%</strong> and fleet coordination accuracy by <strong class="m">30%</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="exp">
+    <div class="role"><span class="title">Salesforce Developer</span><span class="dates">Dec 2013 – Sep 2017</span></div>
+    <div class="company">Accenture <em>— India</em></div>
+    <ul>
+      <li>Delivered core Salesforce data models, security and sharing configuration, validation rules, and profile/permission architecture for global clients — closing <strong class="m">100%</strong> of identified access-compliance audit gaps.</li>
+      <li>Developed and refactored Apex triggers, Visualforce components, and batch jobs across UK-shift production support, reducing incident resolution time by <strong class="m">25%</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <h2>Salesforce Certifications (13x Certified)</h2>
+  <ul class="certs">
+    <li>Certified System Architect</li>
+    <li>Certified Platform Developer II</li>
+    <li>Certified Integration Architect</li>
+    <li>Certified Platform Developer I</li>
+    <li>Certified Development Lifecycle &amp; Deployment Architect</li>
+    <li>Certified Administrator</li>
+    <li>Certified Identity &amp; Access Management Architect</li>
+    <li>Certified CPQ Specialist</li>
+    <li>Certified Data Architect</li>
+    <li>Certified AI Specialist</li>
+    <li>Certified Sharing &amp; Visibility Architect</li>
+    <li>Certified AI Associate</li>
+    <li>Certified Data Cloud Consultant</li>
+    <li>&nbsp;</li>
+  </ul>
+
+  <!-- EDUCATION -->
+  <h2>Education</h2>
+  <p class="edu"><b>Bachelor of Technology (B.Tech), Computer Science &amp; Engineering</b><br>Asansol Engineering College, West Bengal, India &nbsp;|&nbsp; CGPA: 7.30 / 10</p>
+
+</div>
+
+</body>
+</html>
