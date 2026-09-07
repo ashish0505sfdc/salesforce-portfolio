@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PERSONAL_INFO, EXPERIENCE_LIST, CERTIFICATIONS_LIST, HERO_METRICS } from '../data/portfolioData';
-import { X, Printer, Mail, Phone, MapPin, Download, Copy, Check, FileText, Code2, Globe } from 'lucide-react';
-import { LinkedInIcon, GitHubIcon } from './Icons';
+import { X, Printer, Mail, Phone, MapPin, Copy, Check, Code2, Globe } from 'lucide-react';
+import { LinkedInIcon } from './Icons';
 import { triggerCelebrationConfetti } from './ConfettiEffect';
 
 interface ResumeModalProps {
